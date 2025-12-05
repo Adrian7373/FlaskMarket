@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block content %}
+<div class="container" style="width: 700px">
+    <form method="post" class="form-register" style="color:white;">
+        {{ form.hidden_tag() }}
+        {{ form.username.label }}
+        {{ form.username(class="form-control", placeholder="Enter username:") }}
+        {{ form.email_address.label }}
+        {{ form.email_address(class="form-control", placeholder="Enter email:") }}
+        {{ form.password1.label }}
+        {{ form.password1(class="form-control", placeholder="Enter password:") }}
+        {{ form.password2.label }}
+        {{ form.password2(class="form-control", placeholder="Confirm password:") }}
+        <div style="display: flex;width:max-content; margin: 0 auto; margin-top: 20px">
+        {{ form.submit(style="background-color:lawngreen;color:black; border-style: none; border-radius:5px") }}
+        </div>
+    </form>
+    <div style="width: max-content; margin: 10px auto">
+        Already have an Account?
+        <a  href="{{ url_for('login_page') }}"><button style="display: block; margin: 0 auto">Login</button></a>
+        </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,49 @@
+<style>
+  .modal-content {
+    background-color: #212121
+  }
+</style>
+
+<!-- Purchase Confirm -->
+<div class="modal fade" id="Modal-ListNewItem"
+     tabindex="-1"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLabel">
+          <!-- -->
+          Add New Item
+        </h5>
+        <button type="button" class="close"
+                data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form method="POST">
+              {{ new_item_form.hidden_tag() }}
+              <h4 class="text-center">
+                  {{ new_item_form.name.label }}
+                  {{ new_item_form.name }}
+
+                  {{ new_item_form.price.label }}
+                  {{ new_item_form.price }}
+
+                  {{ new_item_form.description.label }}
+                  {{ new_item_form.description(style="height:100px") }}
+              </h4><br>
+              <h6 class="text-center">
+                  By clicking Enlist, you are enlisting this item
+              </h6>
+              {{ new_item_form.submit(class="btn btn-outline-danger btn-block") }}
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary"
+                data-dismiss="modal">Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

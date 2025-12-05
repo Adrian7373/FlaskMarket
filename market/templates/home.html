@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+    <div style="display: flex;justify-content: center; height: 300px">
+        <div style="display: flex; justify-content: center; flex-direction: column">
+            <h1 style="font-size: 100px">Flask Market</h1>
+            <p style="text-align: center">Start purchasing products now</p>
+            <a href="{{ url_for('market_page') }}" style="display: block; margin: 0 auto">
+            <button style="background-color: deepskyblue; width: 130px; height: 40px; border-radius: 10px; border-style: none; margin: 0 auto">Get started</button>
+            </a>
+        </div>
+    </div>
+{% endblock %}
