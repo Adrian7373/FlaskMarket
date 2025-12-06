@@ -172,6 +172,12 @@ Visit:
 
 ---
 
+## 📌 **Project Preview**
+
+<img width="1919" height="989" alt="Screenshot 2025-12-05 235719" src="https://github.com/user-attachments/assets/ef3902f5-3d8c-44c2-8444-332885a802b0" />
+
+---
+
 ## 📌 **Future Improvements**
 
 * Add product images for each item
